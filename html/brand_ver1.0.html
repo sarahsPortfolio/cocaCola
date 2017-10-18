@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=dege">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="html, css, jquery">
+
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/src/html5shiv.js">/* html5shiv */</script>
+    <script src="../ie/ie7/IE9.js">/* ie9 */</script>
+    <script src="../ie/css3pie/PIE_IE9.js">/* csspie */</script>   
+    <script src="../ie/respond/Respond-master/dest/respond.min.js"></script>   
+  <![endif]-->
+
+  <link rel="apple-touch-icon" href="../img/pofol_img/main/favicon_img.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/pofol_img/main/favicon_img.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/normalize.css">
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+
+  <title>welcome coca-cola</title>
+</head>
+
+<style>
+body{overflow-x:hidden;}
+  #wrap{width:940px; height:auto; margin:0 auto;}
+    #headBox{width:100%; height:180px;}
+      #logo{width:100%; height:138px; border-top:40px solid #000; box-sizing:border-box;position:relative;}
+      #logo:before{content:" "; display:block; width: 100vw;position:absolute; left:50%; margin-left:-50vw;border:inherit; top:-40px;}
+      #logo>h1{width:260px; height:80px; background-image:url(../img/pofol_img/header/logo.jpg); background-size:cover; margin:18px 340px 0;}
+      #logo>h1>a{width: 100%;height: 100%;display:block;}
+      #logo>.gnb{width:475px; height:auto; margin:auto; margin-top: 14px;}
+      #logo>.gnb>ul{width:100%; height:auto;}
+      #logo>.gnb>ul:after{content:" "; display:block; clear:both;}
+      #logo>.gnb>ul>li{width:65px; height:18px; margin-right:30px; float:left;}
+      #logo>.gnb>ul>li:nth-child(3){width:95px;}
+      #logo>.gnb>ul>li:nth-child(4){width:60px;}
+      #logo>.gnb>ul>li:nth-child(5){width:70px; margin-right:0;}
+      #logo>.gnb>ul>li>a:hover{font-weight:bold; color:#000; font-size:1.3em; transition:all 300ms ease-out;}
+
+    #contentBox{width:100%; height:1450px;}
+    #contentBox>#bannerBox{width:100%; height:350px;margin-bottom:50px;}
+      #contentBox>#bannerBox>ul{width:1000%;height:100%;}
+        #contentBox>#bannerBox>ul>li{width:10%;height:100%;float:left;}
+        #contentBox>#bannerBox>ul>.ban_1{background-image:url("../img/pofol_img/brand/banner_1.png");background-repeat:no-repeat;background-size:cover;background-position:0 -75px;}
+        #contentBox>#bannerBox>ul>.ban_2{background-image:url("../img/pofol_img/brand/banner_2.png");background-repeat:no-repeat;background-size:cover;background-position:0 -20px;}
+        #contentBox>#bannerBox>ul>.ban_3{background-image:url("../img/pofol_img/brand/banner_3.png");background-repeat:no-repeat;background-size:cover;}
+        #contentBox>#bannerBox>ul>.ban_4{background-image:url("../img/pofol_img/brand/banner_4.png");background-repeat:no-repeat;background-size:cover;}
+        #contentBox>#bannerBox>ul>.ban_5{background-image:url("../img/pofol_img/brand/banner_5.png");background-repeat:no-repeat;background-size:cover;background-position:0 -50px;}
+    #contentBox>#bever_info{width:100%;height:1000px;margin-bottom:450px;}
+      /*#contentBox>#bever_info>.phone_front{width:530px;height: 1000px;background-image:url("../img/pofol_img/brand/back_phone.png");background-repeat:no-repeat;background-size:contain;margin-left:200px; float:left;}*/
+      #contentBox>#bever_info>.phone_bever{width:530px;height: 1000px;background-image:url("../img/pofol_img/brand/back_phone_1.png");background-repeat:no-repeat;background-size:contain; float:left;}
+        #contentBox>#bever_info>.phone_bever>ul{width:435px;height:570px;margin-top:210px;margin-left:46px;padding:0 20px;box-sizing:border-box;}
+        #contentBox>#bever_info>.phone_bever>ul>li{width:100px;height:170px;margin-right:47px;margin-bottom:20px;float:left;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-of-type(3n){margin-right:0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(1){background-image:url("../img/pofol_img/brand/bbeverage/beverage_01.png");background-repeat:no-repeat; background-size:contain; background-position:20px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(2){background-image:url("../img/pofol_img/brand/bbeverage/beverage_02.png");background-repeat:no-repeat; background-size:contain; background-position:15px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(3){background-image:url("../img/pofol_img/brand/bbeverage/beverage_03.png");background-repeat:no-repeat; background-size:contain; background-position:7px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(4){background-image:url("../img/pofol_img/brand/bbeverage/beverage_04.png");background-repeat:no-repeat; background-size:contain; background-position:20px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(5){background-image:url("../img/pofol_img/brand/bbeverage/beverage_05.png");background-repeat:no-repeat; background-size:contain; background-position:20px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(6){background-image:url("../img/pofol_img/brand/bbeverage/beverage_06.png");background-repeat:no-repeat; background-size:contain; background-position:25px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(7){background-image:url("../img/pofol_img/brand/bbeverage/beverage_07.png");background-repeat:no-repeat; background-size:contain; background-position:25px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(8){background-image:url("../img/pofol_img/brand/bbeverage/beverage_08.png");background-repeat:no-repeat; background-size:contain; background-position:25px 0;}
+          #contentBox>#bever_info>.phone_bever>ul>li:nth-child(9){background-image:url("../img/pofol_img/brand/bbeverage/beverage_09.png");background-repeat:no-repeat; background-size:contain; background-position:25px 0;}
+        #contentBox>#bever_info>.phone_bever>ul>li>button{width: 100%;height:100%;}
+        #contentBox>#bever_info>.phone_bever>ol{width:150px;height:50px;margin-left:190px;}
+        #contentBox>#bever_info>.phone_bever>ol>li{width:30px;height:100%;float:left; margin:0 10px;}
+        #contentBox>#bever_info>.phone_bever>ol>li>button{font-size:2rem;line-height:50px;text-align:center;font-weight:bold;}
+      #contentBox>#bever_info>.phone_info{width:380px; height:700px;margin-left:30px;float:right; margin-top:240px;background-image:url("../img/pofol_img/brand/bbeverage/bever_nutrient.png");background-repeat:no-repeat; background-size:contain;}
+
+
+
+
+      
+
+    #footBox{width:100vw; height:auto; background-color:#000; padding:20px; box-sizing:border-box; color:#fff; left:50%; margin-left:-50vw; position:absolute;}
+      #footBox>.title_logo{width:100%; height:50px; position: relative;}
+        #footBox>.title_logo:after{content:" "; display:block; width: 100%; border-bottom: 1px solid #fff; position: absolute; bottom:1em; left:0;}
+          #footBox>.title_logo>h2{width:125px;height:36px;margin-left:20px;float:left;text-align:center;}
+          #footBox>.title_logo>.logo{width:88px;height:88px;float:right;margin-top:-10px; position: absolute; z-index:100;
+                                   background-image: url("../img/pofol_img/footer/batch.png"); background-size:100%; 
+                                   background-repeat:no-repeat;top:0; right: 0;}  
+        #footBox>#info{width: 690px;height: 115px;margin:0 auto; margin-top:30px;margin-bottom:25px;}
+          #footBox>#info>.family{width:155px; margin-right:155px; float:left; text-align:center;}
+            #footBox>#info>.family>dt{margin-bottom:10px; font-weight:bold;font-size:1.3em;margin-bottom:10px;}
+            #footBox>#info>.family>dd{font-size:0.5rem;font-size:0.8em;margin-bottom:7px;}
+            
+          #footBox>#info>.companyinfo{width:75px; margin-right:155px;float:left; text-align:center;}
+            #footBox>#info>.companyinfo>dt{margin-bottom:10px; font-weight:bold;font-size:1.1rem;margin-bottom:10px;}
+            #footBox>#info>.companyinfo>dd{font-size:0.5rem;font-size:0.8em;margin-bottom:7px;}
+            
+          #footBox>#info>.customer{width:150px;float:left;}
+            #footBox>#info>.customer>dt{margin-bottom:10px; font-weight:bold;font-size:1.3rem;margin-bottom:10px;}
+            #footBox>#info>.customer>dd{font-size:0.5rem;font-size:0.8rem;}
+            
+        #footBox>#copyright{width:425px;height: 15px; margin:0 auto; margin-bottom:10px;}
+
+  
+
+
+</style>
+
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <div id="logo">
+        <h1><a href="./main_ver1.1.html"><span class="hidden">cocacola홈페이지 로고 입니다.</span></a></h1>
+        <nav class="gnb">
+          <ul>
+            <li><a href="./brand_ver1.0.html">BRAND</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="cokezine_ver1.0.html">COKEZINE</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">NOTICE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> <!-- // #headBox -->
+
+    <section id="contentBox">
+      <div id="bannerBox">
+        <h2 class="hidden">음료 광고 banner입니다.</h2>
+          <ul>
+            <li class="ban_1"><span class="hidden">코카콜라 광고 banner_1입니다.</span></li>
+            <li class="ban_2"><span class="hidden">코카콜라 광고 banner_2입니다.</span></li>
+            <li class="ban_3"><span class="hidden">코카콜라 광고 banner_3입니다.</span></li>
+            <li class="ban_4"><span class="hidden">gold peak 광고 banner_4입니다.</span></li>
+            <li class="ban_5"><span class="hidden">fanta 광고 banner_5입니다.</span></li>
+          </ul>
+      </div>
+      <div id="bever_info">
+        <h2 class="hidden">음료 영양성분 관련 정보 입니다.</h2>
+          <div class="phone_front">
+            <h3 class="hidden">영양성분을 확인하기 위해 화면을 클릭해 주세요.</h3>
+          </div>      
+          <div class="phone_bever">
+            <h3 class="hidden">영양성분을 확인하고 싶은 음료수의 이미지를 클릭해 주세요.</h3>
+              <ul>
+                <li>
+                  <button><span class="hidden">음료'순수' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'ZICO' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'코코팜' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'평창수' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'토레타' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'태양의 홍차화원' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'fuze tea' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'태양의 마테차' 영양성분 확인하기</span></button>
+                </li>
+                <li>
+                  <button><span class="hidden">음료'씨그램' 영양성분 확인하기</span></button>
+                </li>
+              </ul>
+              <ol>
+                <li><button>1</button></li>
+                <li><button>2</button></li>
+                <li><button>3</button></li>
+              </ol>
+          </div>      
+          <div class="phone_info">
+            <h3 class="hidden">영양성분 이미지 입니다.</h3>
+          </div>      
+      </div>
+    </section> <!-- // #section --> 
+
+    <footer id="footBox">
+      <div class="title_logo">
+        <h2>회사정보</h2>
+        <div class="logo"><span class="hidden">코카콜라 이미지 입니다.</span></div>
+      </div>
+      <div id="info">
+        <dl class="family">
+          <dt>FAMILY-SITE</dt>
+            <dd><a href="http://company.cocacola.co.kr/main.html">한국코카콜라(유)</a></dd>
+            <dd><a href="http://www.ccbk.co.kr/index.jsp">한국코카콜라(주)</a></dd>
+            <dd><a href="http://www.cocacolamall.co.kr/index.jsp">한국코카콜라음료 쇼핑몰</a></dd>
+        </dl>
+        <dl class="companyinfo">
+          <dt>회사정보</dt>
+            <dd><a href="#">연혁</a></dd>
+            <dd><a href="#">채용</a></dd>
+            <dd><a href="#">회사소개</a></dd>
+        </dl>
+        <dl class="customer">
+          <dt>고객서비스센터</dt>
+            <dd><strong>TEL)</strong> 080-570-8989</dd>
+            <dd><strong>주소</strong>:<br />
+                경상남도 양산시 충렬로<br />
+                263(유산동)
+            </dd>
+        </dl>
+      </div>
+      <div id="copyright">
+        &copy; 2017. Coca-cola korea company, Limited. all right reserved.
+      </div>
+    </footer> <!-- // #footBox -->
+  </div>
+
+  <script src="../js/src/brand_banner.js"></script>
+</body>
+</html>
