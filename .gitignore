@@ -26,15 +26,12 @@ graphich/**
 *.pptx
 
 
-# png파일 제한
-*.png
+
 
 # psd파일 제한
 *.psd
 
-#jpg파일 제한
-*.jpg
-*.jpge
+
 
 #gif파일 제한
 *.gif
