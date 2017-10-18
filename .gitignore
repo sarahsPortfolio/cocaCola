@@ -1,0 +1,62 @@
+﻿# .gitignore주석표기는 '#'으로 한다. 
+# .gitignore는 git에 전송하지 않을 파일을 작성하기 위한 문서
+# .gitignore는 숨김처리된 파일
+# .gitignore 사용 시에는 폴더명을 작성할 수도 있고, 
+# .gitignore 파일명도 작성할 수 있다. 
+# .gitignore에서 확장자 명만 올리고 싶다면 모든 파일이라는 뜻으로 '*'을 기입하고, 확장자 명을 붙인다. 
+# .gitignore에서 모든 폴더라는 뜻으로 사용 시, '**'를 사용하는 것이 일반적이다. 
+# .gitignore에서 주석처리는 반드시 작성하는 것이 좋다. 
+# 무엇을 어떠한 상황에서 git에 올리지 않을지 표기해야하기 때문이다.!
+
+
+# **/*.psd
+# "모든 폴더안에 있는 psd 문서만 올리지 않겠습니다."" 라는 뜻
+
+# ./assets/graphic/
+# ./assets/graphic/**
+# "assets안에 있는 graphic폴더의 모든 문서는 올리지 않겠습니다."라는 뜻
+
+# photoshop템플릿 파일 제한
+graphic/**
+graphich/**
+
+
+# ppt파일 제한
+*.ppt
+*.pptx
+
+
+# png파일 제한
+*.png
+
+# psd파일 제한
+*.psd
+
+#jpg파일 제한
+*.jpg
+*.jpge
+
+#gif파일 제한
+*.gif
+
+#압축 제한
+**/*.zip
+*.zip
+**.zip
+
+#docx파일 제한
+*.docx
+**.docx
+
+#pdf
+**/*.pdf
+
+#exe 
+**/*.exe
+
+#mp3 / mp4 제한
+**/*.mp3
+**/*.mp4
+
+#엑셀 제한
+**/*/.xlsx
